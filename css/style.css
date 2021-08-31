@@ -1,18 +1,11 @@
 body {
   background-color: #c7c2c2d6;
 }
-.schedule-body > tr > td:hover {
-  background-color: tomato;
-  color: white;
+.list-box {
+  list-style: none;
+  background-color: aqua;
 }
-
-/* Оформлення таблиці */
-.schedule {
-  border-collapse: collapse;
-}
-
-.schedule th,
-.schedule td {
-  padding: 8px;
-  border: 1px solid #212121;
+.filter {
+  display: flex;
+  background-color: blue;
 }
