@@ -1,4 +1,29 @@
+:root {
+  --body-bgc: #ffffff; /* Колір фону тіла сайту*/
+  --pri-text: #757575; /* Основний колір тексту */
+  --pri-title: #212121; /* Основний колір заголовків */
+  --pri-link: #212121; /* Основний колір посилань*/
+  --pri-btn-text: #212121; /* Основний колір тексту кнопок */
+  --sec-btn-text: #ffffff; /* Вторинний колір тексту кнопок */
+  --btn-bgc: #f5f4fa; /* Основний колір фону кнопок */
+  --pri-brand: #2196f3; /* Основний колір бренду (лого) */
+  --accent: #2196f3; /* колір акценту (виділення посилань і кнопок)*/
+  --btn-hover: #188ce8; /* Колір ховера для кнопки героя*/
+  --sec-brand: #000000; /* вторинний колір бренду (лого шапка) */
+  --ter-brand: #ffffff; /* Третинний колір бренду (лого футер) */
+  --pri-section-bgc: #ffffff; /* Основний колір фону секцій*/
+  --sec-section-bgc: #f5f4fa; /* Вторинний колір фону секцій */
+  --ter-section-bgc: #2f303a; /* третинний колір фону секцій (шапка і футер) */
+  --hero-text: #ffffff; /* Колір тексту героя */
+  --footer-contacts: rgba(255, 255, 255, 0.6); /*колір контактів в підвалі */
+  --ft-text: #ffffff; /* Колір тексту адреси у футері*/
 
+  --color-one: #212121; /*SVG базовый цвет 1*/
+  --color-two: #2196f3; /*SVG базовы цвет 2*/
+  --color-three: #afb1b8; /*SVG базовый цвет 3 */
+}
+
+/*ЗАГАЛЬНІ СТИЛІ*/
 body {
   background-color: var(--body-bgc);
   color: var(--pri-text);
@@ -6,38 +31,39 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.714; /*24px*/
+  max-width: 480px;
+  padding: 15px;
+  margin: auto;
+  background-color: grey;
 }
 
-.container {
-  width: 100vw;  height: 100vh;   background-color: grey;
- }
-.parent1 {
-  background-color: yellow;
-  width: 350px;   height: 350px;   position: absolute;   
-  z-index: 100;
-}
-.child1 {
-  background-color: orange;
-  width: 50px;   height: 50px;   position: absolute;   right: -25px;
-  z-index: -200;
+@media screen and (min-width: 700px) {
+  body {
+    max-width: 1000px;
+  }
 }
 
-.parent2 {
-  background-color: cyan;
-  width: 375px;   height: 400px;   position: absolute;   
-  z-index: 90;
-}
-.child2 {
-  background-color: blue;   
-  width: 50px;   height: 70px;   position: absolute;   right: -25px;
-  z-index: -150;
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-.parent3 {
-  background-color: indigo;   width: 400px;   height: 450px;   position: absolute;
-  z-index: 80;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-.child3 { 
-  background-color: red;   width: 50px;   height: 90px;   position: absolute;   right: -25px;
-  z-index: -100;
+
+ul {
+  list-style: none;
+  display: block;
+  outline: 1px solid orange;
 }
+li {
+  outline: 1px solid green;
+}
+
